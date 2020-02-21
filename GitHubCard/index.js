@@ -92,6 +92,7 @@ const userCard = (user) => {
 
   const createAddress = document.createElement('a');
   createAddress.href = user.html_url;
+  createAddress.textContent = user.html_url;
 
   const createFollowers = document.createElement('p');
   createFollowers.textContent = `Followers: ${user.followers}`;
